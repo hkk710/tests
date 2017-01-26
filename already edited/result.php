@@ -183,7 +183,7 @@ while($row4=mysqli_fetch_array($result5))
      $total += $m100score2;
 
      //RELAY100F
-     $query = "SELECT SCORE FROM RESULT_RELAY100M WHERE DEPT=2";
+     $query = "SELECT SCORE FROM RESULT_RELAY100F WHERE DEPT=2";
      $res = mysqli_query($cot, $query);
      while($row = mysqli_fetch_assoc($res)) {
          $f100score2 = $row['SCORE'];
@@ -236,7 +236,7 @@ while($row4=mysqli_fetch_array($result5))
         $total += $m100score3;
 
         //RELAY100F
-        $query = "SELECT SCORE FROM RESULT_RELAY100M WHERE DEPT=3";
+        $query = "SELECT SCORE FROM RESULT_RELAY100F WHERE DEPT=3";
         $res = mysqli_query($cot, $query);
         while($row = mysqli_fetch_assoc($res)) {
             $f100score3 = $row['SCORE'];
@@ -289,7 +289,7 @@ while($row4=mysqli_fetch_array($result5))
         $total += $m100score4;
 
         //RELAY100F
-        $query = "SELECT SCORE FROM RESULT_RELAY100M WHERE DEPT=4";
+        $query = "SELECT SCORE FROM RESULT_RELAY100F WHERE DEPT=4";
         $res = mysqli_query($cot, $query);
         while($row = mysqli_fetch_assoc($res)) {
             $f100score4 = $row['SCORE'];
@@ -342,7 +342,7 @@ while($row4=mysqli_fetch_array($result5))
         $total += $m100score5;
 
         //RELAY100F
-        $query = "SELECT SCORE FROM RESULT_RELAY100M WHERE DEPT=5";
+        $query = "SELECT SCORE FROM RESULT_RELAY100F WHERE DEPT=5";
         $res = mysqli_query($cot, $query);
         while($row = mysqli_fetch_assoc($res)) {
             $f100score5 = $row['SCORE'];
