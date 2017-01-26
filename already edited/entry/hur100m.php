@@ -28,7 +28,7 @@ $score=0;
 	$insert2 = mysqli_query($conn, $insert2_query);
 	$insert3 = mysqli_query($conn, $insert3_query);
 
-	$score1 = "SELECT SCORE FROM student WHERE CHEST = $chest1";
+	$score1 = "SELECT SCORE FROM STUDENT WHERE CHEST = $chest1";
 	$result1 = mysqli_query($conn, $score1);
 
 	while($row = mysqli_fetch_assoc($result1))
@@ -37,7 +37,7 @@ $score=0;
 		$score1 = $row["SCORE"];
 		$score1 = $score1+5;
 	}
-	$score2 = "SELECT SCORE FROM student WHERE CHEST = $chest2";
+	$score2 = "SELECT SCORE FROM STUDENT WHERE CHEST = $chest2";
 	$result2 = mysqli_query($conn, $score2);
 	while($row = mysqli_fetch_assoc($result2))
 	{
@@ -45,7 +45,7 @@ $score=0;
 		$score2 = $row["SCORE"];
 		$score2 = $score2+3;
 	}
-	$score3 = "SELECT SCORE FROM student WHERE CHEST = $chest3";
+	$score3 = "SELECT SCORE FROM STUDENT WHERE CHEST = $chest3";
 	$result3 = mysqli_query($conn, $score3);
 	while($row = mysqli_fetch_assoc($result3))
 	{
@@ -54,11 +54,11 @@ $score=0;
 		$score3 = $score3+2;
 	}
 
-	$update1_query = "UPDATE `athletics`.`student` SET `SCORE` = $score1 WHERE `CHEST` = $chest1";
+	$update1_query = "UPDATE `athletics`.`STUDENT` SET `SCORE` = $score1 WHERE `CHEST` = $chest1";
 	$qry=mysqli_query($conn, $update1_query);
-$update2_query = "UPDATE `athletics`.`student` SET `SCORE` = $score2 WHERE `CHEST` = $chest2";
+$update2_query = "UPDATE `athletics`.`STUDENT` SET `SCORE` = $score2 WHERE `CHEST` = $chest2";
 	$qry=mysqli_query($conn, $update2_query);
-$update3_query = "UPDATE `athletics`.`student` SET `SCORE` = $score3 WHERE `CHEST` = $chest3";
+$update3_query = "UPDATE `athletics`.`STUDENT` SET `SCORE` = $score3 WHERE `CHEST` = $chest3";
 	$qry=mysqli_query($conn, $update3_query);
 
 
